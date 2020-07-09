@@ -1,0 +1,44 @@
+{
+    "name": "i9w3b/alert-message",
+    "description": "Notificações para Laravel",
+    "keywords": [
+        "i9w3b",
+        "alert-message"
+    ],
+    "homepage": "https://github.com/i9w3b/alert-message",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcelo Sena",
+            "email": "marcelosenaonline@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/session": "^7.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "I9w3b\\AlertMessage\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "I9w3b\\AlertMessage\\AlertMessageServiceProvider"
+            ],
+            "aliases": {
+                "AlertMessage": "I9w3b\\AlertMessage\\AlertMessageFacade"
+            }
+        }
+    }
+}
