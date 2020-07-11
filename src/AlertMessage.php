@@ -52,6 +52,18 @@ class AlertMessage
         $this->add('info', $message, $title, $options);
     }
 
+    public function warning($message, $title = null, $options = []) {
+        $this->add('warning', $message, $title, $options);
+    }
+
+    public function success($message, $title = null, $options = []) {
+        $this->add('success', $message, $title, $options);
+    }
+
+    public function error($message, $title = null, $options = []) {
+        $this->add('error', $message, $title, $options);
+    }
+
     /**
      * Add a notification
      *
@@ -147,3 +159,4 @@ class AlertMessage
         $this->notifications = [];
     }
 }
+
