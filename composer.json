@@ -7,7 +7,6 @@
     ],
     "homepage": "https://github.com/i9w3b/alert-message",
     "license": "MIT",
-    "type": "library",
     "authors": [
         {
             "name": "Marcelo Sena",
